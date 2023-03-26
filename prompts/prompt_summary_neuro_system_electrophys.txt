@@ -1,0 +1,31 @@
+Summarise the text as a labelled property graph consisting of nodes and links.
+
+text:
+"""
+Movement disorders in Parkinson’s disease (PD) are commonly associated with slow oscillations and increased synchrony of neuronal activity in the basal ganglia. 
+The neural mechanisms underlying this dynamic network dysfunction, however, are only poorly understood. 
+Here, we show that the strength of inhibitory inputs from striatum to globus pallidus external (GPe) is a key parameter controlling oscillations in the basal ganglia. 
+Specifically, the increase in striatal activity observed in PD is sufficient to unleash the oscillations in the basal ganglia. 
+"""
+labelled property graph consisting of nodes and links:
+{
+    "nodes": [
+        {"id":1, "label":"movement disorders"},
+        {"id":2, "label":"slow oscillations in the basal ganglia"},
+        {"id":3, "label":"synchrony of neuronal activity in the basal ganglia"},
+        {"id":4, "label":"basal ganglia"},
+        {"id":5, "label":"strength of inhibitory inputs from striatum to globus pallidus external (GPe)"},
+        {"id":6, "label":"oscillations in the basal ganglia"}
+    ],
+    "links": [
+        {"id": 1, "label":"association", "from": 1, "to": 2},
+        {"id": 2, "label":"increase", "from": 1, "to": 3},
+        {"id": 3, "label":"control", "from": 5, "to": 6}
+    ]
+}
+
+text:
+"""
+<<PAPER>>
+"""
+labelled property graph consisting of nodes and links:

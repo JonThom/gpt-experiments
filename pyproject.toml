@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gpt-experiments"
+version = "0.1.0"
+description = "experiments"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9.4"
+PyPDF3 = "^1.0.6"
+openai = "^0.27.2"
+dash-react-force-graph = {path = "../dash-components/dash-react-force-graph/dist/dash_react_force_graph-0.0.1-py3-none-any.whl"}
+dash = "^2.9.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
